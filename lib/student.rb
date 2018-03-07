@@ -24,10 +24,7 @@ class Student
   end
 
   def self.drop_table
-    sql = <<-SQL
-      DROP TABLE students
-      SQL
-
+    sql = "DROP TABLE students"
     DB[:conn].execute(sql)
   end
 
@@ -45,7 +42,7 @@ class Student
   end
 
   def self.create
-    
+
   end
 
   def self.new_from_db
@@ -53,7 +50,7 @@ class Student
   end
 
   def self.find_by_name
-
+    
   end
 
   def update
